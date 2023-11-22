@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400&family=Lora&display=swap" rel="stylesheet">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var dropdowns = document.querySelectorAll('.dropdown');
+
+            for (var i = 0; i < dropdowns.length; i++) {
+                dropdowns[i].addEventListener("hover", function(event) {
+                    event.stopPropagation(); 
+                    var dropdownContent = this.querySelector('.dropdown-content');
+                    dropdownContent.classList.toggle('show');
+                });
+
+                document.addEventListener("hover", function(event) {
+                    for (var i = 0; i < dropdowns.length; i++) {
+                        var dropdownContent = dropdowns[i].querySelector('.dropdown-content');
+                        if (dropdownContent.classList.contains('show') && !dropdowns[i].contains(event.target)) {
+                            dropdownContent.classList.remove('show');
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div id="skip"><a href = "#main">Skip to Main Content</a></div>
+        <nav>
+            <ul>
+                <!-- <li><a href="index.html">Travel</a></li> -->
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Travel ▾</a>
+                    <div class="dropdown-content">
+                        <a href="#new-york">New York City</a>
+                        <a href="#toronto">Toronto</a>
+                        <a href="#korea">Seoul</a>
+                        <a href="#new-orleans">New Orleans</a>
+                        <a href="#quebec">Quebec</a>
+                    </div>
+                </li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="pets.html">Pets</a></li>
+            </ul>
+        </nav>
+
+        <div class = "travel-title">
+            <h1 class="slide">Travel</h1>
+        </div>
+    </header>    
+
+    <main class = "main-container">
+        <div class = "container1" id = "new-york">
+            <h2>New York City, USA</h2>
+
+            <div class="photos">
+                <img src="images/new_york_central_park.jpeg" alt="Central Park">
+            </div>
+
+            <div class="text-title">
+                <p>Geographical Location: North America</p>
+            </div>
+
+            <div class="text-box">
+                <p>New York City, often referred to as "The City that Never Sleeps" is a bustling metropolis characterized by its iconic skyline dominated by towering skyscrapers such as the Empire State Building and One World Trade Center. The city is a melting pot of cultures, with diverse neighborhoods like Chinatown, Harlem, and Little Italy contributing to its vibrant and eclectic atmosphere. </p>
+                <p>Central Park offers a serene escape from the urban hustle, while Times Square pulsates with the energy of Broadway theaters and neon lights. From the historic Statue of Liberty to the trendy neighborhoods of Williamsburg and SoHo, New York City is a dynamic tapestry of history, culture, and innovation.</p>
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="photo-gallery">
+
+                <div>
+                    <img class="travel_static" src="images/new_york_bryant.jpeg" alt="Bryant Park">
+                    <p>Bryant Park</p>
+                </div>
+
+                <div>
+                    <img src="images/new_york_bagel.jpeg" alt="NYC Bagels">
+                    <p>NYC Bagels</p>
+                </div>
+
+                <div>
+                    <img src="images/new_york_summit.jpeg" alt="Summit One Vanderbilt">
+                    <p>Skyline from Summit One Vanderbuilt</p>
+                </div>
+
+                <div>
+                    <img src="images/new_york_soho.jpeg" alt="Soho">
+                    <p>Soho</p>
+                </div>
+
+                <div>
+                    <img src="images/new_york_city.jpeg" alt="NYC Street">
+                    <p>NYC Street</p>
+                </div>
+
+                <div>
+                    <img src="images/new_york_broadway.jpeg"  alt="Broadway Show Wicked">
+                    <p>Broadway Show Wicked</p>
+                </div>
+            </div>
+        </div>
+
+        <div class = "container2" id = "toronto">
+            <h2>Toronto, Canada</h2>
+    
+            <div class="photos">
+                <img src="images/toronto_skyline.JPG" alt="Toronto Skyline">
+            </div>
+
+            <div class="text-title">
+                <p>Geographical Location: North America</p>
+            </div>
+
+            <div class="text-box">
+                <p>Toronto, Canada's largest city, is a dynamic metropolis with a captivating blend of diverse cultures and modern urbanity. Nestled on the northwestern shore of Lake Ontario, Toronto boasts a striking skyline marked by iconic structures like the CN Tower. In every corner, Toronto exudes a welcoming energy that captures the essence of its cosmopolitan spirit.</p>
+                <p>The city's multicultural fabric is reflected in its vibrant neighborhoods, each offering a unique character and culinary experience. From the historic Distillery District to the bustling streets of Kensington Market, Toronto's rich tapestry unfolds through its eclectic mix of art, entertainment, and global cuisine.</p>
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="photo-gallery">
+                <div>
+                    <img src="images/toronto_berzy_park.jpeg" alt="Berzy Park">
+                    <p>Berzy Park</p>
+                </div>
+
+                <div>
+                    <img src="images/toronto_christmas.jpeg" alt="Christmas Tree">
+                    <p>Christmas Tree</p>
+                </div>
+                    
+                <div>
+                    <img src="images/toronto_old.jpeg" alt="Old Toronto">
+                    <p>Old Toronto</p>
+                </div>
+
+                <div>
+                    <img src="images/toronto_sunset.jpeg" alt="Riverdale Park">
+                    <p>Riverdale Park</p>
+                </div>
+
+                <div>
+                    <img src="images/toronto_dundas.jpeg" alt="Dundas">
+                    <p>Dundas</p>
+                </div>
+
+                <div>
+                    <img src="images/toronto_ago.jpeg" alt="Art Gallery of Ontario">
+                    <p>Art Gallery of Ontario</p>
+                </div>
+            </div>
+        </div>
+
+        <div class = "container3" id = "korea">
+            <h2>Seoul, Korea</h2>
+
+            <div class="photos">
+                <img src="images/korea_namsan.jpeg" alt="Korea Skyline">
+            </div>
+
+            <div class="text-title">
+                <p>Geographical Location: Asia</p>
+            </div>
+        
+            <div class="text-box">
+                <p>Seoul, the capital of South Korea, stands as a dynamic blend of tradition and modernity. Nestled along the banks of the Han River, this sprawling metropolis seamlessly integrates ancient palaces and temples with futuristic architecture and cutting-edge technology. The city's skyline is marked by towering skyscrapers and the iconic N Seoul Tower, offering panoramic views of the urban landscape.</p>
+                <p>Seoul's vibrant districts, from the trendy shops in Myeongdong to the historic alleys of Bukchon Hanok Village, showcase a rich cultural tapestry. Boasting a robust culinary scene, the city is a haven for food enthusiasts, with street markets like Gwangjang providing a sensory feast of traditional Korean dishes. The juxtaposition of ancient traditions and cutting-edge innovation makes Seoul a captivating destination.</p>
+            </div>
+            
+            <h3>Photo Gallery</h3>
+            <div class="photo-gallery">
+                <div>
+                    <img src="images/korea_dongdae.jpeg" alt="Dongdaemun">
+                    <p>Dongdaemun</p>
+                </div>
+
+                <div>
+                    <img src="images/korea_wall.jpeg" alt="Naksan Park">
+                    <p>Naksan Park</p>
+                </div>
+
+                <div>
+                    <img src="images/korea_traditional.JPG" alt="Gyeongbokgung Palace">
+                    <p>Gyeongbokgung Palace</p>
+                </div>
+
+                <div>
+                    <img src="images/korea_food.jpeg" alt="Chicken Galbi">
+                    <p>Chicken Galbi</p>
+                </div>
+
+                <div>
+                    <img src="images/korea_yonsei.jpeg" alt="Yonsei University">
+                    <p>Yonsei University</p>
+                </div>
+
+                <div>
+                    <img src="images/korea_family.jpeg" alt="Dinner with Family">
+                    <p>Dinner with Family</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class = "container4" id = "new-orleans">
+            
+            <h2>New Orleans, USA</h2>
+
+            <div class="photos">
+                <img src="images/new_orleans_sunset.jpeg" alt="Sunset">
+            </div>
+
+            <div class="text-title">
+                <p>Geographical Location: North America</p>
+            </div>
+
+            <div class="text-box">
+                <p>New Orleans, a city steeped in a unique blend of history, culture, and vibrant energy, stands as a jewel along the banks of the Mississippi River. Known for its lively music scene, rich culinary traditions, and festive atmosphere, the Big Easy captivates visitors with its lively spirit.</p>
+                <p>The French Quarter, with its iconic architecture and lively streets, is a testament to the city's Creole heritage, while the sounds of jazz echo through the historic neighborhoods. From the renowned cuisine, with dishes like gumbo and beignets, to the historic allure of St. Louis Cathedral, New Orleans is a sensory delight that beckons exploration and embraces the essence of Southern charm.</p>
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="photo-gallery">
+            
+                <div>
+                    <img src="images/new_orleans_cafe_du_monde.jpg" alt="Cafe Du Monde">
+                    <p>Cafe Du Monde</p>
+                </div>
+
+                <div>
+                    <img src="images/new_orleans_french_quarter.jpeg" alt="French Quarter">
+                    <p>French Quarter</p>
+                </div>
+
+                <div>
+                    <img src="images/new_orleans_jackson_square.jpg" alt="Jackson Square">
+                    <p>Jackson Square</p>
+                </div>
+
+                <div>
+                    <img src="images/new_orleans_city_park.jpg" alt="City Park">
+                    <p>City Park</p>
+                </div>
+
+                <div>
+                    <img src="images/new_orleans_beach.jpeg" alt="Fontainbleau Beach">
+                    <p>Fontainbleau Beach</p>
+                </div>
+
+                <div>
+                    <img src="images/new_orleans_seafood_boil.jpg" alt="Sea Food Boil">
+                    <p>Sea Food Boil</p>
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div class = "container5" id = "quebec">
+            <h2>Quebec, Canada</h2>
+    
+            <div class="photos">
+                <img src="images/quebec_night_lights.JPG" alt="Quebec Night">
+            </div>
+
+            <div class="text-title">
+                <p>Geographical Location: North America</p>
+            </div>
+
+            <div class="text-box">
+                <p>Quebec, a province in eastern Canada, is a captivating blend of Old World charm and modern sophistication. The heart of French Canadian culture, Quebec City, with its cobbled streets and historic architecture, exudes a European ambiance that transports visitors back in time. The iconic Château Frontenac stands proudly atop the cityscape, overlooking the majestic St. Lawrence River.</p> 
+                <p>Beyond the city, the province unfolds into a diverse landscape of rolling hills, pristine lakes, and charming villages. Montreal, Quebec's vibrant metropolis, offers a cosmopolitan experience with its eclectic neighborhoods, world-class dining, and a thriving arts scene. Rich in history and linguistic heritage, Quebec seamlessly weaves together the contemporary and the traditional, creating a uniquely French-inspired Canadian destination.</p>
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="photo-gallery">
+                <div>
+                    <img src="images/quebec_cathedral.jpeg" alt="Basilique Notre Dame">
+                    <p>Basilique Notre Dame</p>
+                </div>
+
+                <div>
+                    <img src="images/quebec_food.jpeg" alt="Ville Marie">
+                    <p>Restaurant Ville Marie</p>
+                </div>
+
+                <div>
+                    <img src="images/quebec_night1.jpeg" alt="Quebec City Night">
+                    <p>Quebec City Night</p>
+                </div>
+
+                <div>
+                    <img src="images/quebec_quebec_city.jpeg" alt="Quebec City Street">
+                    <p>Quebec City Street</p>
+                </div>
+
+                <div>
+                    <img src="images/quebec_hill.jpeg" alt="La Ciadelle de Quebec">
+                    <p>La Citadelle de Quebec</p>
+                </div>
+
+                <div>
+                    <img src="images/quebec_night2.jpeg" alt="Quartier Petit Champlain">
+                    <p>Quartier Petit Champlain</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>University of Michigan School of Information</p>
+        <p>&copy; Dorothy Hong - SI 339</p>
+    </footer>
+
+</body>
+</html>

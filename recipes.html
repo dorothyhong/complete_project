@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400&family=Lora&display=swap" rel="stylesheet">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var dropdowns = document.querySelectorAll('.dropdown');
+
+            for (var i = 0; i < dropdowns.length; i++) {
+                dropdowns[i].addEventListener("hover", function(event) {
+                    event.stopPropagation(); 
+                    var dropdownContent = this.querySelector('.dropdown-content');
+                    dropdownContent.classList.toggle('show'); 
+                });
+
+                document.addEventListener("hover", function(event) {
+                    for (var i = 0; i < dropdowns.length; i++) {
+                        var dropdownContent = dropdowns[i].querySelector('.dropdown-content');
+                        if (dropdownContent.classList.contains('show') && !dropdowns[i].contains(event.target)) {
+                            dropdownContent.classList.remove('show');
+                        }
+                    }
+                });
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="skip"><a href = "#main">Skip to Main Content</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Travel</a></li>
+                <!-- <li><a href="recipes.html">Recipes</a></li> -->
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Recipes ▾</a>
+                    <div class="dropdown-content">
+                        <a href="#filet-mignon">Filet Mignon</a>
+                        <a href="#prosciutto-avocado-poached-egg-toast">Prosciutto Avocado Toast</a>
+                        <a href="#tomato-basil-spaghetti">Tomato Basil Spaghetti</a>
+                    </div>
+                </li>
+                <li><a href="pets.html">Pets</a></li>
+            </ul>
+        </nav>
+
+        <div class = "recipes-title">
+            <h1 class="slide">Recipes</h1>
+        </div>
+    </header>  
+
+    <main id = "main">
+        <div id="filet-mignon">    
+            
+            <div class="food-item">
+                <h2>Filet Mignon</h2>
+            </div>
+
+            <div class="food-text">
+                <ul>
+                    <li>Origin: French</li>
+                    <li>Source: Personal Recipe</li>
+                    <li>Category: Main Dish</li>
+                </ul>
+            </div>
+           
+            <div class="food-img">
+                <img src="images/fillet_mignon.JPG" alt="Filet Mignon">
+            </div>
+            
+            
+            <div class="description">
+                <p>Filet Mignon is a French steak dish. It is the epitome of fine dining and is the perfect choice for special occasions or when you want to treat yourself to an exceptional meal.</p>
+            </div>
+
+            <div class="ingredients">
+                <h3>Recipe Ingredients</h3>
+                <ul>
+                    <li>Filet mignon steaks</li>
+                    <li>Salt and black pepper</li>
+                    <li>Olive oil</li>
+                    <li>Cloves garlic, minced</li>
+                    <li>Fresh rosemary</li>
+                    <li>Unsalted butter</li>
+                    <li>Red wine</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h3>Recipe Steps</h3>
+                <ol>
+                    <li>Preheat your oven to 400°F (200°C).</li>
+                    <li>Season both sides of the filet mignon steaks generously with salt and black pepper.</li>
+                    <li>In an oven-safe skillet, heat the olive oil over high heat until it's almost smoking.</li>
+                    <li>Carefully add the seasoned filet mignon steaks to the hot skillet. Sear the steaks for about 2-3 minutes on each side, or until a golden-brown crust forms.</li>
+                    <li>Add minced garlic and rosemary sprigs to the skillet during the last minute of searing for additional flavor.</li>
+                    <li>Transfer the skillet with the seared steaks to the preheated oven. Roast for about 5-7 minutes for medium-rare, or longer to your preferred level of doneness.</li>
+                    <li>Remove the skillet from the oven and transfer the steaks to a plate. Cover them loosely with aluminum foil and let them rest for 5 minutes.</li>
+                    <li>While the steaks are resting, you can optionally deglaze the skillet with red wine or beef broth, scraping up any browned bits from the bottom. Reduce the liquid by half and whisk in the butter to create a simple pan sauce.</li>
+                    <li>Serve the Filet Mignon steaks hot, drizzled with the pan sauce if desired.</li>
+                </ol>
+            </div>
+
+            <div class="food-gallery">
+                <h3>Additional Food images</h3>
+                <img src="images/steak.jpeg" width="200" height="180" alt="steak">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/RosemarySprig.jpg/440px-RosemarySprig.jpg" width="200" height="180" alt="Rosemary">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Italian_garlic_PDO.JPG/440px-Italian_garlic_PDO.JPG" width="200" height="180" alt="Garlic">
+            </div>
+            
+        </div>
+
+        <div id="tomato-basil-spaghetti">
+           
+            <div class="food-item">
+                <h2>Tomato Basil Spaghetti</h2>
+            </div>
+
+            <div class="food-text">
+                <ul>
+                    <li>Origin: Italian</li>
+                    <li>Source: Personal Recipe</li>
+                    <li>Category: Main Dish</li>
+                </ul>
+            </div>
+
+            <div class="food-img">
+                <img src="images/tomato_basil_spagetti.JPG" alt="Tomato Basil Spaghetti">
+            </div>
+
+            <div class="description">
+                <p>Tomato Basil Spagetti is a timeless combination of simple yet exquisite ingredients, coming together to not only satisfy the palate but also capture the essence of comfort and tradition.</p>
+            </div>
+
+            <div class="ingredients">
+                <h3>Recipe Ingredients</h3>
+                <ul>
+                    <li>Spaghetti</li>
+                    <li>Olive oil</li>
+                    <li>Large ripe tomatoes</li>
+                    <li>Fresh basil leaves</li>
+                    <li>Salt</li>
+                    <li>Pepper</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h3>Recipe Steps</h3>
+                <ol>
+                    <li>Cook the spaghetti according to the package instructions until al dente. Drain and set aside.</li>
+                    <li>In a large skillet, heat the olive oil over medium heat. Add the minced garlic and sauté until fragrant.</li>
+                    <li>Dice the tomatoes and add them to the skillet. Cook for 5-7 minutes, seasoning with salt and pepper to taste.</li>
+                    <li>Add the cooked spaghetti to the skillet, tossing to combine with the tomato mixture. Cook for an additional 2-3 minutes.</li>
+                    <li>Plate the spaghetti and garnish with fresh basil leaves.</li>
+                </ol>
+            </div>
+
+            <div class="food-gallery">
+                <h3>Additional Food images</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/440px-Tomato_je.jpg" width="200" height="180" alt="Tomatoes">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Basil-Basilico-Ocimum_basilicum-albahaca.jpg/440px-Basil-Basilico-Ocimum_basilicum-albahaca.jpg" width="200" height="180" alt="Basil">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Spaghetti_spiral%2C_2008.jpg/252px-Spaghetti_spiral%2C_2008.jpg" width="200" height="180" alt="Dried Spagetti">
+            </div>
+        </div>
+        
+        <div id="prosciutto-avocado-poached-egg-toast">
+            
+
+            <div class="food-item">
+                <h2>Prosciutto Avocado Toast</h2>
+            </div>
+ 
+            <div class="food-text">
+                <ul>
+                    <li>Origin: Italian and American Fusion</li>
+                    <li>Source: Personal Recipe</li>
+                    <li>Category: Brunch</li>
+                </ul>
+            </div>
+
+            <div class="food-img">
+                <img src="images/prosciutto_avocado_poached_egg_toast.jpeg" alt="Prosciutto Avocado Poached Egg Toast">
+            </div>
+
+
+            <div class="description">
+                <p>Prosciutto Avocado Poached Egg Toast is a fusion of Italian and American flavors. This dish combines the savory taste of prosciutto with the creaminess avocado and the gooey texture of a poached egg.</p>
+            </div>
+
+            <div class="ingredients">
+                <h3>Recipe Ingredients</h3>
+                <ul>
+                    <li>2 slices of artisanal bread (such as sourdough or ciabatta)</li>
+                    <li>2 large eggs</li>
+                    <li>2 slices of prosciutto</li>
+                    <li>1 ripe avocado, thinly sliced</li>
+                    <li>2 tablespoons white vinegar</li>
+                    <li>Salt and black pepper, to taste</li>
+                    <li>Fresh chives or microgreens (optional, for garnish)</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h3>Recipe Steps</h3>
+                <ol>
+                    <li>Toast the slices of bread until they reach your desired level of crispiness.</li>
+                    <li>While the bread is toasting, bring a large pot of water to a gentle simmer. Add the white vinegar to the simmering water.</li>
+                    <li>Carefully crack one egg into a small bowl. Create a gentle whirlpool in the simmering water by stirring it with a spoon, and then slide the egg into the center of the whirlpool. Poach the egg for about 3-4 minutes for a runny yolk, or longer for a firmer yolk. Repeat with the second egg.</li>
+                    <li>While the eggs are poaching, arrange the prosciutto slices on top of the toasted bread, followed by the thinly sliced avocado.</li>
+                    <li>When the poached eggs are done, remove them from the water with a slotted spoon, allowing excess water to drain. Place one poached egg on each toast.</li>
+                    <li>Season the eggs with salt and black pepper to taste, and garnish with fresh chives or microgreens if desired.</li>
+                    <li>Serve the Prosciutto Avocado Poached Egg Toast immediately, and enjoy!</li>
+                </ol>
+            </div>
+ 
+            <div class="food-gallery"> 
+                <h3>Additional Food Images</h3>
+
+                <img src="images/prosciutto.jpeg" width="200" height="180" alt="Prosciutto">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Six_eggs_views_from_the_top_on_a_white_background.jpg/440px-Six_eggs_views_from_the_top_on_a_white_background.jpg" width="200" height="180" alt="Eggs">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Avocado_Hass_-_single_and_halved.jpg/440px-Avocado_Hass_-_single_and_halved.jpg" width="200" height="180" alt="Avocado">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>University of Michigan School of Information</p>
+        <p>&copy; Dorothy Hong - SI 339</p>
+    </footer>
+</body>
+</html>
