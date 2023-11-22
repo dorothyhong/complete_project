@@ -483,13 +483,6 @@ footer{
     .pet-gallery {
         display: flex;
     }
-
-    /* Dropdown adjustments */
-    nav li {
-        display: inline;
-        padding: 10px 20px;
-        text-align: center;
-    }
 }
 
 /* Desktop styles */
@@ -567,12 +560,5 @@ footer{
 
     .pet-gallery {
         display: flex;
-    }
-
-    /* Dropdown adjustments */
-    nav li {
-        display: inline;
-        padding: 10px 30px;
-        text-align: center;
     }
 }
