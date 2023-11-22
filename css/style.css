@@ -79,7 +79,8 @@ nav {
 
 nav li {
     display:inline;
-    padding-right: 60px;
+    padding: 0 50px 0 10px;
+    /* padding-right: 60px; */
 }
 
 nav a {
@@ -422,6 +423,10 @@ footer{
         font-size: 32px;
     }
 
+    nav li {
+        padding-right: 60px;
+    }
+
     h1 {
         font-size: 50px;
         padding: 30px 0;
@@ -499,6 +504,10 @@ footer{
         padding-top: 120px;
         padding-bottom: 120px;
         font-size: 48px;
+    }
+
+    nav li {
+        padding-right: 60px;
     }
 
     h1 {
