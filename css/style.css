@@ -150,7 +150,7 @@ footer{
 .container1, .container2, .container3, .container4, .container5 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 10px;
+    margin: 20px 5px 20px 5px;
     gap: 30px;
 }
 
@@ -333,7 +333,8 @@ footer{
 .pet-img{
     grid-column: 1 / 3;
     display: flex;
-    margin: 30px 60px 30px 60px;
+    margin: 20px;
+    /* margin: 30px 60px 30px 60px; */
 }
 
 .pet-img img {
@@ -347,7 +348,8 @@ footer{
     border-radius: 8px;
     border: 2px solid black;
     padding: 30px 30px 0 30px;
-    margin: 30px 60px 30px 60px;
+    margin: 20px;
+    /* margin: 30px 60px 30px 60px; */
 }
 
 .pet-text p {
@@ -359,7 +361,8 @@ footer{
 }
 
 .pet-gallery {
-    margin: 30px 60px 30px 60px;
+    margin: 20px;
+    /* margin: 30px 60px 30px 60px; */
 }
 
 .pet-gallery div {
@@ -381,7 +384,8 @@ footer{
     color: black;
     font-size: 18px;
     border-radius: 10px;
-    margin: 20px 60px 20px 60px;
+    /* margin: 20px 60px 20px 60px; */
+    margin: 20px;
     padding: 20px;
 }
 
@@ -482,6 +486,10 @@ footer{
         margin-bottom: 20px;
     }
 
+    .pet-img, .pet-text, .pet-likes, .pet-gallery {
+        margin: 30px 60px 30px 60px;
+    }
+
     .pet-img{
         grid-column: 1 / 2;
         margin: 30px 0 30px 60px;
@@ -563,6 +571,10 @@ footer{
 
     .photo-gallery {
         margin: 30px;
+    }
+
+    .pet-img, .pet-text, .pet-likes, .pet-gallery {
+        margin: 30px 60px 30px 60px;
     }
 
     .pet-img{
