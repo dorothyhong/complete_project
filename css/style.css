@@ -441,7 +441,7 @@ footer{
     }
 
     .container1, .container2, .container3, .container4, .container5 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 
@@ -451,7 +451,7 @@ footer{
     }
     
     .text-box {
-        grid-column: 2 / 5;
+        grid-column: 2 / 4;
     }
 
     .steps {
@@ -485,10 +485,6 @@ footer{
     }
 
     /* Dropdown adjustments */
-    .dropdown-content {
-        min-width: 200px;
-    }
-
     nav li {
         display: inline;
         padding: 10px 20px;
@@ -574,10 +570,6 @@ footer{
     }
 
     /* Dropdown adjustments */
-    .dropdown-content {
-        min-width: 250px;
-    }
-
     nav li {
         display: inline;
         padding: 10px 30px;
