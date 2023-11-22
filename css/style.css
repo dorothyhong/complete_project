@@ -12,15 +12,15 @@ body{
 }
 
 .travel-title {
-    background-image: url("../images/korea_duksu.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../images/korea_duksu.jpeg");
 }
 
 .recipes-title {
-    background-image: url("../images/recipes_background.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../images/recipes_background.jpeg");
 }
 
 .pets-title {
-    background-image: url("../images/pets_background.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../images/pets_background.jpeg");
 }
 
 .travel-title, .recipes-title, .pets-title {
